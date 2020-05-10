@@ -48,10 +48,10 @@ permalink: /blog/:title
 
 
 ### Collections ###
-collections:
-  projects:
-    output: true
-    permalink: /projects/:name
+#collections:
+#  projects:
+#    output: true
+#    permalink: /projects/:name
 
 
 ### Disqus ###
