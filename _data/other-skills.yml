@@ -1,0 +1,7 @@
+- name: Docker
+  percentage: 60
+  color: success
+
+- name: Azure
+  percentage: 30
+  color: info
