@@ -3,7 +3,7 @@ title: Book recommendation - Clean Code
 tags: [Book, Agile Development, Clean Code, Pragmatic]
 style: border 
 color: light 
-description: Clean code is a great book which I suggest every developer should read.
+description: Clean code is a great book that I suggest every developer should read.
 ---
 
 I have heard a lot of people talk about the Agile development methodology. The read agile manifesto and then they continue to do "waterfally" things. While this is a fairly interesting topic to discuss, I want to draw your attention to people who created and signed this manifesto. I consider them the most influential people in the industry. It will be a very good idea to look at what they have to say about the software. Let's pick one name "Robert C. Martin", popularly known as Uncle Bob.
