@@ -10,6 +10,7 @@ remote_theme        : YoussefRaafatNasry/portfolYOU
 ### Plugins ###
 plugins:
   - jemoji
+  - jekyll-sitemap
 
 
 ### Navbar Settings ###
