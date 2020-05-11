@@ -12,15 +12,15 @@ I work as a Senior Software Engineer in a company responsible for creating softw
 
 My personality type is [ISTJ (“THE LOGISTICIAN”)](https://www.16personalities.com/istj-personality) and [MindTime archetype](https://www.mindtime.com/archetypes/) is "[Past - The Truth Seeker](https://www.mindtime.com/archetypes/truth-seeker/)". I am one of the rare people who's StrengthsFinder 2.0 results span all 4 talents - Strategic Thinking, Executing, Influencing and Relationship-building:
 
-Learner
+[Learner](https://www.gallupstrengthscenter.com/cms/en-us/gmj/694/learner)
 
-Connectedness
+[Connectedness](https://www.gallupstrengthscenter.com/cms/en-us/gmj/649/connectedness)
 
-Intellection
+[Intellection](https://www.gallupstrengthscenter.com/cms/en-us/gmj/691/intellection)
 
-Maximizer
+[Maximizer](https://www.gallupstrengthscenter.com/cms/en-us/gmj/697/maximizer)
 
-Deliberative
+[Deliberative](https://www.gallupstrengthscenter.com/cms/en-us/gmj/658/deliberative)
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
