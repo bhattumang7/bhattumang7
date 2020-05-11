@@ -2,7 +2,7 @@
 layout: default
 permalink: /
 ---
-{% include _includes/analytics.html %}
+{% include _includes/Analytics.html %}
 
 
 {% include landing.html %}
