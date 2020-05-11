@@ -22,6 +22,9 @@ My personality type is [ISTJ (“THE LOGISTICIAN”)](https://www.16personalitie
 
 [Deliberative](https://www.gallupstrengthscenter.com/cms/en-us/gmj/658/deliberative)
 
+Apart from being a software engineer, I enjoy most of my time clicking pictures, reading books, sipping coffee, or watching movies. I also happen to love to ride on my Enfield Desert Storm. I also practice programming and learning new techniques in my free time.
+I also like to take out a fair share of time for family.
+
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
 {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
