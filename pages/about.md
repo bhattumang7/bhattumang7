@@ -7,15 +7,15 @@ weight: 3
 
 # **About Me**
 
-Hi I am **{{ site.author.name }}** :wave:,<br>
-I work as a Senior Software Engineer in company responsible for creating softwares for healthcare.
+Him I am **{{ site.author.name }}** :wave:,<br>
+I work as a Senior Software Engineer in a company responsible for creating software for health care.
 
-My personality type is ISTJ (“THE LOGISTICIAN”) and mindtime arche type is "Past - The Truth Seeker". I am one of rare people who's StrengthsFinder 2.0 results span all 4 talents (Strategic Thinking, Executing, Influencing and Relationship building):
- Learner
- Connectedness
- Intellection
- Maximizer
- Deliberative
+My personality type is ISTJ (“THE LOGISTICIAN”) and MindTime archetype is "Past - The Truth Seeker". I am one of the rare people who's StrengthsFinder 2.0 results span all 4 talents (Strategic Thinking, Executing, Influencing and Relationship-building):
+* Learner
+* Connectedness
+* Intellection
+* Maximizer
+* Deliberative
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
