@@ -12,6 +12,6 @@ Uncle Bob has authored and co-authored several books. He also has got an entire 
 
 If there is just one book that you need to read then I would say that this is the book you need to read. At times people read books and then continue to produce shit, this is not such a book. This will completely change the way you write your code. Although the examples are in Java, everything Uncle Bob says is mostly applicable to C#, Python, PHP, etc. So, regardless of the technology you write your code in, do read this book. Don't be fooled by the name of chapters in this book might sound simplistic to you (because there are entire chapters just of naming things, creating functions, etc). This book has got the potential to change the way you write your code forever. There is a lot of code in this book you have to take out time to read thru all of those and once you are done with the book; you will be a better developer.
 
-What I just said might sound like a too big of promise to you. Just believe me, and buy this book.
+What I just said might sound like a too big of promise to you. Just believe me, and buy this book. 
 
 Happy reading!
