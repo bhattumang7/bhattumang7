@@ -12,6 +12,8 @@ The script had 'ErrorActionPreference ="Stop"'. Some of those files were checked
 
 In this case, we needed to take more control over the tf.exe process. Specifically return value from process, error stream, and stdout stream. 
 
+Here is the code change: 
+
 ```PowerShell
 
 $FileToBeCheckedOut = "abc.txt" # file path that needs to be checked out.
