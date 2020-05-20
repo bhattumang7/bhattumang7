@@ -14,7 +14,7 @@ With the help of "System.Diagnostics.Process", we can get return value from proc
 
 Here is the code change: 
 
-```PowerShell
+```powershell
 
 $FileToBeCheckedOut = "abc.txt" # file path that needs to be checked out.
 $TfExePath = "C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe"
