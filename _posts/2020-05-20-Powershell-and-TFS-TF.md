@@ -8,7 +8,7 @@ description: A note on TF.exe and the error I was seeing while checking out from
 
 I was working on something where we needed to modify a file using PowerShell and check in the changes back to TFS. Checking out the file was causing some troubles. Let's look at the details. 
 
-The script had 'ErrorActionPreference ="Stop"'. Some of those files were checked out by other users. So, calling 'tf checkout abc.txt' was causing the script to stop. This was because tf.exe was writing to error stream and returning 0 as error code (0 means everything is alright). Just because the tf.exe was writing to the error stream further execution stopped in PowerShell. 
+The script had 'ErrorActionPreference ="Stop"'. Some of those files were checked out by other users. So, calling 'tf checkout abc.txt' stopped further script execution. This was because tf.exe was writing to error stream and returning 0 as error code (0 means everything is alright). Just because the tf.exe was writing to the error stream further execution stopped in PowerShell. 
 
 In this case, I took more control over the tf.exe process. Specifically return value from process, error stream, and stdout stream. 
 
