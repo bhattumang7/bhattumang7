@@ -10,7 +10,7 @@ Calling "tf checkout" writes to the error stream if the file is checked out by a
 
 Even though output was written to error stream by tf.exe, 0 was returned from the process (0 means everything is alright). Just because the tf.exe was writing to the error stream, PowerShell did not execute further code. It was necessary to continue further execution and ignore the error stream if the return value was 0. 
 
-I took more control over the tf.exe process with help from "System.Diagnostics.Process". With this, we can get return value from process, error stream, and stdout stream as a variable. 
+With the help of "System.Diagnostics.Process", we can get return value from process, error stream, and stdout stream as a variable. 
 
 Here is the code change: 
 
