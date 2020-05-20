@@ -6,7 +6,7 @@ color: light
 description: A note on TF.exe and the error I was seeing while checking out from PowerShell.
 ---
 
-Calling "tf checkout" writes to the error stream if the file is checked out by any other user in any workspace. Powershell by default considers any error stream output as an error. Hence, checking out and a file using TF from the PowerShell was not working well.   
+Calling "tf checkout" writes to the error stream if the file is checked out by any other user in any workspace. Powershell by default considers any error stream output as an error. Hence, checking out a file using TF from the PowerShell was not working well.   
 
 The script had 'ErrorActionPreference ="Stop"'. Some of those files were checked out by other users. So, calling 'tf checkout abc.txt' stopped further PoweShell script execution. This was because tf.exe was writing to error stream and returning 0 as error code (0 means everything is alright). Just because the tf.exe was writing to the error stream further execution stopped in PowerShell. 
 
