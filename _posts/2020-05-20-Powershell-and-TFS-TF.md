@@ -6,11 +6,11 @@ color: light
 description: A note on TF.exe and the error I was seeing while checking out from PowerShell.
 ---
 
-Calling "tf checkout" writes to the error stream if the file is checked out by any other user in any workspace. Powershell by default considers any error stream output as an error. Hence, checking out a file using TF from the PowerShell was not working well.   
+Calling "tf checkout" writes to the error stream if the file is checked out by any other user in any workspace. Powershell by default considers any error stream output as an error. Hence, checking out a file using TF from the PowerShell was not working well (The script had 'ErrorActionPreference ="Stop"').   
 
-The script had 'ErrorActionPreference ="Stop"'. Some of those files were checked out by other users. So, calling 'tf checkout abc.txt' stopped further PoweShell script execution. This was because tf.exe was writing to error stream and returning 0 as error code (0 means everything is alright). Just because the tf.exe was writing to the error stream further execution stopped in PowerShell. 
+Even though output was written to error stream by tf.exe, 0 was returned from the process(0 means everything is alright). Just because the tf.exe was writing to the error stream further execution stopped in PowerShell. I needed ability to continue further execution and ignore the error stream if the return value was 0. 
 
-In this case, I took more control over the tf.exe process. Specifically return value from process, error stream, and stdout stream. 
+I took more control over the tf.exe process with help from "System.Diagnostics.Process". With this we can get return value from process, error stream, and stdout stream as a variable. 
 
 Here is the code change: 
 
