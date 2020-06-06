@@ -5,7 +5,7 @@ permalink: /about/
 weight: 3
 ---
 
-# **About Me**
+# **About Umang**
 
 Hi! I am **{{ site.author.name }}**,<br>
 Welcome to my blog. I work as a Senior Software Engineer in a company responsible for creating software for health care. 
