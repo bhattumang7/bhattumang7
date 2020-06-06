@@ -24,3 +24,9 @@ Doing this will generate a log that will look something like below:
 Once you have got the error, come back to ProcMon and press "Ctrl+E" again to disable the event capture. 
 
 At this step, we have got the ProcMon log captured. Now comes the tricky part to co-relate the application error with the entries in ProcMon.
+
+Here are a few things you can try:
+- Start from the bottom of the log and go upwards.
+- Try to co-relate the time of error with the actual error.
+- If you have a separate DLL having UI for showing error (form to show the error to a user), look for that DLL in the logs first and then go upwards. 
+
