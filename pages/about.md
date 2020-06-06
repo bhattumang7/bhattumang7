@@ -11,7 +11,7 @@ Hi! I am **{{ site.author.name }}**,<br>
 Welcome to my blog. I work as a Senior Software Engineer in a company responsible for creating software for health care. 
 Using this blog, I intend to share some of my ideas and learning. 
 
-Here are the software activities that I am involved with:
+Here are the software engineering related activities that I am involved with:
 - [Level 3 Support Engineering](https://medium.com/@harshanacslab/what-is-l1-l2-and-l3-support-engineering-6e9ca20c1dbb)
 - Software performance measurement (Windows Performance recorder and analyzer, ANTS profiler, etc).
 - Software Performance Tunning.
