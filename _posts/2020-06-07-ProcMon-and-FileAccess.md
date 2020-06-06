@@ -23,4 +23,4 @@ Doing this will generate a log that will look something like below:
 
 Once you have got the error, come back to ProcMon and press "Ctrl+E" again to disable the event capture. 
 
-At this step we have got the ProcMon log captured. Now comes the tricky part to co-relate the application error with the entries in event viewer.
+At this step, we have got the ProcMon log captured. Now comes the tricky part to co-relate the application error with the entries in ProcMon.
