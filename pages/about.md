@@ -8,19 +8,21 @@ weight: 3
 # **About Me**
 
 Hi! I am **{{ site.author.name }}**,<br>
-Welcome to my blog. I work as a Senior Software Engineer in a company responsible for creating software for health care. Using this blog, I intend to share some of my ideas and learning.
+Welcome to my blog. I work as a Senior Software Engineer in a company responsible for creating software for health care. 
+Using this blog, I intend to share some of my ideas and learning. 
+
+Here are the software activities that I am involved with:
+- [Level 3 Support Engineering](https://medium.com/@harshanacslab/what-is-l1-l2-and-l3-support-engineering-6e9ca20c1dbb)
+- Software performance measurement (Windows Performance recorder and analyzer, ANTS profiler, etc).
+- Software Performance Tunning.
+- New software development.
 
 My personality type is [ISTJ (“THE LOGISTICIAN”)](https://www.16personalities.com/istj-personality) and [MindTime archetype](https://www.mindtime.com/archetypes/) is "[Past - The Truth Seeker](https://www.mindtime.com/archetypes/truth-seeker/)". I am one of the rare people who's StrengthsFinder 2.0 results span all 4 talents - Strategic Thinking, Executing, Influencing, and Relationship-building:
-
-[Learner](https://www.gallupstrengthscenter.com/cms/en-us/gmj/694/learner)
-
-[Connectedness](https://www.gallupstrengthscenter.com/cms/en-us/gmj/649/connectedness)
-
-[Intellection](https://www.gallupstrengthscenter.com/cms/en-us/gmj/691/intellection)
-
-[Maximizer](https://www.gallupstrengthscenter.com/cms/en-us/gmj/697/maximizer)
-
-[Deliberative](https://www.gallupstrengthscenter.com/cms/en-us/gmj/658/deliberative)
+- [Learner](https://www.gallupstrengthscenter.com/cms/en-us/gmj/694/learner)
+- [Connectedness](https://www.gallupstrengthscenter.com/cms/en-us/gmj/649/connectedness)
+- [Intellection](https://www.gallupstrengthscenter.com/cms/en-us/gmj/691/intellection)
+- [Maximizer](https://www.gallupstrengthscenter.com/cms/en-us/gmj/697/maximizer)
+- [Deliberative](https://www.gallupstrengthscenter.com/cms/en-us/gmj/658/deliberative)
 
 Apart from being a software engineer, I enjoy most of my time clicking pictures, reading books, sipping coffee, or watching movies. I also happen to love to ride on my Enfield Desert Storm. I also practice programming and learning new techniques in my free time.
 I also like to take out a fair share of time for family.
