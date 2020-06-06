@@ -41,7 +41,7 @@ Here are a few tips from my experience to make this easy:
 - If you see two subsequent rows for the same path where the first is access denied and the subsequent request is a success, you can ignore the first one. It is Windows's way of making sure that the user has access to the requested resource.
 - Press "Crtl+J" to open the registry/file directly from the ProcMon record.
 
-In my case, simply having the filter for "PATH NOT FOUND" took me the file that the program was looking for (and was not present):
+In my case, simply having the filter for "PATH NOT FOUND" took me to the file that the program was looking for (and was not present):
 ![ProcMon file not present error](../assets/blog_pictures/2020-06-07-ProcMon-and-FileAccess/Final_filter.jpg)
 
 ProcMon is a very powerful tool. Read the documentation to understand it further.
