@@ -27,7 +27,7 @@ Now, come back to ProcMon and press "Ctrl+E" which will re-enable even capture. 
 Doing this will generate a log that will look something like below:
 ![ProcMon logs](../assets/blog_pictures/2020-06-07-ProcMon-and-FileAccess/procmon_logs.jpg)
 
-Once you have got the error, come back to ProcMon and press "Ctrl+E" again to disable the event capture. 
+Once you have got the error, come back to ProcMon and press "Ctrl+E" again to disable the event capture. We want to capture minimum events so that analyzing it remains an easy task.
 
 At this step, we have got the ProcMon log captured. Now comes the tricky part to co-relate the application error with the entries in ProcMon.
 
