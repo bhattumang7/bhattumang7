@@ -31,3 +31,10 @@ Here are a few things you can try:
 - If you have a separate DLL having UI for showing error (form to show the error to a user), look for that DLL in the logs first and then go upwards. 
 - If the error is path not found then directly filter for "path not found" in results column.
 - If the error is access denied then you might have to go through a lot of entries to find the right once. 
+- You can also use ProcMon to monitor Registry, Network, Process, and thread activity. 
+- If you two subsequent rows for the same path where the first is access denied and the subsequent request is a success, you can ignore the first one. It is Windows's way of making sure that the user has access to the requested resource.
+
+In my case, simply having the filter for not found took me the file it was looking for:
+![ProcMon file not present error](../assets/blog_pictures/2020-06-07-ProcMon-and-FileAccess/Final_filter.jpg)
+
+ProcMon is a very powerful tool. Read the documentation to understand it further.
