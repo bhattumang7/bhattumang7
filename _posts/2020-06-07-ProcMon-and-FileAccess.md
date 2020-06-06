@@ -29,4 +29,5 @@ Here are a few things you can try:
 - Start from the bottom of the log and go upwards.
 - Try to co-relate the time of error with the actual error.
 - If you have a separate DLL having UI for showing error (form to show the error to a user), look for that DLL in the logs first and then go upwards. 
-
+- If the error is path not found then directly filter for "path not found" in results column.
+- If the error is access denied then you might have to go through a lot of entries to find the right once. 
