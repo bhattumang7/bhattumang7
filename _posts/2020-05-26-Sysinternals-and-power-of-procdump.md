@@ -13,7 +13,7 @@ Something went wrong for sure, but it did not propagate the error up to the UI o
 One of the handy tools to investigate this type of problem is "[procdump](https://docs.microsoft.com/en-us/sysinternals/downloads/procdump)" from Sysinternals. With the help of this tool, we can check and understand if there are any exceptions being thrown in the background. In Windows terminology, it is called [first chance exception](https://docs.microsoft.com/en-us/security-risk-detection/concepts/first-chance-exception).
 
 I started the application like below, using Procdump: 
-```cmd
+```powershell
 Procdump.exe -e 1 -f "" -x C:\dumps MyApp.exe 
 ```
 
