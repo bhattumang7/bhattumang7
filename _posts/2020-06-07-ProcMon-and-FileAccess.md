@@ -8,5 +8,5 @@ description: ProcMon can be used to diagnose the file access related errors. Let
 
 Once someone contacted me to understand an error. The error read "Run-time error '76' Path Not found". The application developer had written correct error logging and it included error message and error number. The only thing that was not logged was the application path.
 
-![alt text](../assets/blog_pictures/2020-06-07-ProcMon-and-FileAccess")
+![alt text](../assets/blog_pictures/2020-06-07-ProcMon-and-FileAccess.jpg)
 
