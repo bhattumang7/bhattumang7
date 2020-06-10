@@ -12,10 +12,10 @@ Welcome to my blog. I work as a Senior Software Engineer in a company responsibl
 Using this blog, I intend to share some of my ideas and learning. 
 
 Here are the software engineering related activities that I am involved with:
+- New software development.
 - [Level 3 Support Engineering](https://medium.com/@harshanacslab/what-is-l1-l2-and-l3-support-engineering-6e9ca20c1dbb)
 - Software performance measurement (Windows Performance recorder and analyzer, ANTS profiler, etc).
 - Software Performance Tunning.
-- New software development.
 
 My personality type is [ISTJ (“THE LOGISTICIAN”)](https://www.16personalities.com/istj-personality) and [MindTime archetype](https://www.mindtime.com/archetypes/) is "[Past - The Truth Seeker](https://www.mindtime.com/archetypes/truth-seeker/)". I am one of the rare people who's StrengthsFinder 2.0 results span all 4 talents - Strategic Thinking, Executing, Influencing, and Relationship-building:
 - [Learner](https://www.gallupstrengthscenter.com/cms/en-us/gmj/694/learner)
