@@ -18,7 +18,7 @@ The original code was written something like below:
 Private Sub DisplayAdministrators()
     Const myProcName = "DisplayAdministrators"
     
-    'define columns in administrator array
+    ''define columns in administrator array
     Const f_AdminId = 0
     Const f_AdminAbbr = 1
     Const f_Name = 2 
