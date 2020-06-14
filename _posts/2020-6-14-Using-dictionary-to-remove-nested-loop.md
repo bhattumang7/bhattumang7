@@ -86,7 +86,7 @@ We can store an administrator ID's index in a dictionary (where key will be admi
 
 Lets us look at the code change:
 
-<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">Private</span> <span style="color: #0000aa">Sub</span> <span style="color: #00aa00">DisplayAdministrators</span>()
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">Private</span> <span style="color: #0000aa">Sub</span> <span style="color: #00aa00">DisplayAdministrators</span>()
     <span style="color: #0000aa">Const</span> myProcName = <span style="color: #aa5500">&quot;DisplayAdministrators&quot;</span>
     
     <span style="color: #aaaaaa; font-style: italic">&#39;&#39;define columns in administrator array</span>
@@ -94,12 +94,12 @@ Lets us look at the code change:
     <span style="color: #0000aa">Const</span> f_AdminAbbr = <span style="color: #009999">1</span>
     <span style="color: #0000aa">Const</span> f_Name = <span style="color: #009999">2</span> 
 
-	<span style="color: #0000aa">Dim</span> dictAdministratorIdIndex <span style="color: #0000aa">As</span> <span style="color: #0000aa">New</span> Dictionary
+    <span style="color: #0000aa">Dim</span> dictAdministratorIdIndex <span style="color: #0000aa">As</span> <span style="color: #0000aa">New</span> Dictionary
     <span style="color: #0000aa">Dim</span> lng <span style="color: #0000aa">As</span> <span style="color: #00aaaa">Long</span>
     <span style="color: #0000aa">Dim</span> lngRow <span style="color: #0000aa">As</span> <span style="color: #00aaaa">Long</span>
     <span style="color: #0000aa">Dim</span> lngTopRow <span style="color: #0000aa">As</span> <span style="color: #00aaaa">Long</span>
     <span style="color: #0000aa">Dim</span> vntAdministrators <span style="color: #0000aa">As</span> <span style="color: #00aaaa">Variant</span>
-	<span style="color: #0000aa">Dim</span> vntKey <span style="color: #0000aa">As</span> <span style="color: #00aaaa">Variant</span>
+    <span style="color: #0000aa">Dim</span> vntKey <span style="color: #0000aa">As</span> <span style="color: #00aaaa">Variant</span>
 
     <span style="color: #aaaaaa; font-style: italic">&#39;fill administrators grid</span>
     vntAdministrators = m_objClient.GetAllAdministrators()
@@ -161,6 +161,7 @@ Proc_Exit:
     <span style="color: #0000aa">Resume</span> Proc_Exit
 <span style="color: #0000aa">End</span> <span style="color: #0000aa">Function</span>
 </pre></div>
+
 
 
 Once this change was in place, the time taken by this procedure came down drastically. It finished in seconds rather than finishing in minutes.
