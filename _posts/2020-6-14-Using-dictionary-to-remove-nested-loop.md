@@ -13,7 +13,7 @@ Original code worked fine for a few years but, once the amount of data grew if t
 
 The original code was written something like below:
 
-```vbscript
+```vbnet
 
 Private Sub DisplayAdministrators()
     Const myProcName = "DisplayAdministrators"
