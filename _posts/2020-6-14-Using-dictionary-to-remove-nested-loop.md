@@ -14,6 +14,7 @@ Original code worked fine for a few years but, once the amount of data grew if t
 The original code was written something like below:
 
 ```vb6
+
 Private Sub DisplayAdministrators()
     Const myProcName = "DisplayAdministrators"
     
@@ -77,4 +78,5 @@ Private Sub DisplayAdministrators()
     
     End If
 End Sub
+
 ```
