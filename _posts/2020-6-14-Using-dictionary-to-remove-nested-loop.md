@@ -80,7 +80,7 @@ The original code was written something like below:
 </pre></div>
 
 
-In the later of the procedure, the nested loops will cause a lot of CPU cycles to be spent to get the output. The inner loop is to find out the intended row from the grid (index of it). 
+In the later part of the procedure, the nested loops cause a lot of CPU cycles to be spent to get the output. The inner loop is to find out the intended row from the grid (index of it). 
 
 We can store an administrator ID's index in a dictionary (where key will be administrator ID and the vlaue will be its index in the grid). In the nested loop, we will have to just look up for the administrator ID in the dictionary. 
 
