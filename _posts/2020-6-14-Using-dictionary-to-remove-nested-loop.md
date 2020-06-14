@@ -3,7 +3,7 @@ title: Replacing nested loops with dictionary
 tags: [Replace nested loops, Software Performance Tuning optimization technique, Real world software performance]
 style: border 
 color: light 
-description: Let us look at an interesting example of situation where I could gain some CPU at cost of RAM.
+description: Let us look at an interesting example of situation where I could gain some CPU/time at cost of RAM.
 ---
 
 Let us look at a software performance problem/slowness which I fixed in the VB6 code.
