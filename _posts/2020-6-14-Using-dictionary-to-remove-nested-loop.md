@@ -14,7 +14,69 @@ Original code worked fine for a few years but, once the amount of data grew if t
 
 The original code was written something like below:
 
-<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">Private</span> <span style="color: #0000aa">Sub</span> <span style="color: #00aa00">DisplayAdministrators</span>()
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%"> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">Private</span> <span style="color: #0000aa">Sub</span> <span style="color: #00aa00">DisplayAdministrators</span>()
     <span style="color: #0000aa">Const</span> myProcName = <span style="color: #aa5500">&quot;DisplayAdministrators&quot;</span>
     
     <span style="color: #aaaaaa; font-style: italic">&#39;&#39;define columns in administrator array</span>
@@ -46,7 +108,7 @@ The original code was written something like below:
             .Redraw = <span style="color: #0000aa">True</span>
         <span style="color: #0000aa">End</span> <span style="color: #0000aa">With</span>
         
-        <span style="color: #aaaaaa; font-style: italic">&#39;set active row and select rows for any AdministratorIDs passed in</span>
+        <span style="color: #aaaaaa; font-style: italic">&#39;set active row and select rows for any AdministratorISs passed in</span>
         <span style="color: #0000aa">With</span> grdAdministrators
             lngTopRow = .MaxRows
             <span style="color: #0000aa">For</span> lng = <span style="color: #009999">0</span> <span style="color: #0000aa">To</span> UBound(m_vntSelectedIDs)
@@ -77,4 +139,5 @@ The original code was written something like below:
     
     <span style="color: #0000aa">End</span> <span style="color: #0000aa">If</span>
 <span style="color: #0000aa">End</span> <span style="color: #0000aa">Sub</span>
-</pre></div>
+</pre></td></tr></table></div>
+
