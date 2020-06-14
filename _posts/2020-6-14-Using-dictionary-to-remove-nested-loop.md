@@ -86,7 +86,7 @@ We can store an administrator ID's index in a dictionary (where key will be admi
 
 Lets us look at the code change:
 
-<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">Private</span> <span style="color: #0000aa">Sub</span> <span style="color: #00aa00">DisplayAdministrators</span>()
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">Private</span> <span style="color: #0000aa">Sub</span> <span style="color: #00aa00">DisplayAdministrators</span>()
     <span style="color: #0000aa">Const</span> myProcName = <span style="color: #aa5500">&quot;DisplayAdministrators&quot;</span>
     
     <span style="color: #aaaaaa; font-style: italic">&#39;&#39;define columns in administrator array</span>
@@ -112,7 +112,7 @@ Lets us look at the code change:
                 .Row = lngRow + <span style="color: #009999">1</span>
                 .Col = <span style="color: #009999">0</span>
                 .Text = vntAdministrators(f_AdminId, lngRow)
-				dictAdministratorIdIndex.Add <span style="color: #0000aa">CStr</span>(vntAdministrators(f_AdminId, lngRow)), lngRow + <span style="color: #009999">1</span> <span style="color: #aaaaaa; font-style: italic">&#39;new line</span>
+                dictAdministratorIdIndex.Add <span style="color: #0000aa">CStr</span>(vntAdministrators(f_AdminId, lngRow)), lngRow + <span style="color: #009999">1</span> <span style="color: #aaaaaa; font-style: italic">&#39;new line</span>
                 .Col = <span style="color: #009999">1</span>
                 .Text = vntAdministrators(f_AdminAbbr, lngRow)
                 .Col = <span style="color: #009999">2</span>
@@ -124,27 +124,27 @@ Lets us look at the code change:
         <span style="color: #aaaaaa; font-style: italic">&#39;set active row and select rows for any AdministratorIDs passed in</span>
         <span style="color: #0000aa">With</span> grdAdministrators
             lngTopRow = .MaxRows
-			<span style="color: #0000aa">If</span> vntAdministrators.Count &gt; <span style="color: #009999">0</span> <span style="color: #0000aa">Then</span>
-				<span style="color: #0000aa">For</span> lng = <span style="color: #009999">0</span> <span style="color: #0000aa">To</span> UBound(m_vntSelectedIDs)
-                    lngRow = ItemOrMinusOne(vntAdministrators, m_vntSelectedIDs(lng)) <span style="color: #aaaaaa; font-style: italic">&#39; New line to replace the inner loop with a dictionary search</span>
+            <span style="color: #0000aa">If</span> dictAdministratorIdIndex.Count &gt; <span style="color: #009999">0</span> <span style="color: #0000aa">Then</span>
+                <span style="color: #0000aa">For</span> lng = <span style="color: #009999">0</span> <span style="color: #0000aa">To</span> UBound(m_vntSelectedIDs)
+                    lngRow = ItemOrMinusOne(dictAdministratorIdIndex, m_vntSelectedIDs(lng)) <span style="color: #aaaaaa; font-style: italic">&#39; New line to replace the inner loop with a dictionary search</span>
                     <span style="color: #0000aa">If</span> lngRow &gt; <span style="color: #009999">0</span> <span style="color: #0000aa">And</span> lngTopRow &gt;= lngRow <span style="color: #0000aa">Then</span>
                         lngTopRow = lngRow
                     <span style="color: #0000aa">End</span> <span style="color: #0000aa">If</span>
                 <span style="color: #0000aa">Next</span>
-			<span style="color: #0000aa">End</span> <span style="color: #0000aa">If</span>
+            <span style="color: #0000aa">End</span> <span style="color: #0000aa">If</span>
             .Col = <span style="color: #009999">2</span>
             .Row = lngTopRow
             .Action = ActionActiveCell
-			<span style="color: #0000aa">If</span> vntAdministrators.Count &gt; <span style="color: #009999">0</span> <span style="color: #0000aa">Then</span>
-				<span style="color: #0000aa">For</span> lng = <span style="color: #009999">0</span> <span style="color: #0000aa">To</span> UBound(m_vntSelectedIDs)
-                    lngRow = ItemOrMinusOne(vntAdministrators, m_vntSelectedIDs(lng))
+            <span style="color: #0000aa">If</span> dictAdministratorIdIndex.Count &gt; <span style="color: #009999">0</span> <span style="color: #0000aa">Then</span>
+                <span style="color: #0000aa">For</span> lng = <span style="color: #009999">0</span> <span style="color: #0000aa">To</span> UBound(m_vntSelectedIDs)
+                    lngRow = ItemOrMinusOne(dictAdministratorIdIndex, m_vntSelectedIDs(lng))
                     <span style="color: #0000aa">If</span> lngRow &gt;= <span style="color: #009999">0</span> <span style="color: #0000aa">Then</span>
                         .Row = lngRow
                         .Col = <span style="color: #009999">0</span>
                         .SelModeSelected = <span style="color: #0000aa">True</span>
                     <span style="color: #0000aa">End</span> <span style="color: #0000aa">If</span>
                 <span style="color: #0000aa">Next</span> lng
-			<span style="color: #0000aa">End</span> <span style="color: #0000aa">If</span>
+            <span style="color: #0000aa">End</span> <span style="color: #0000aa">If</span>
             .Row = .ActiveRow
         <span style="color: #0000aa">End</span> <span style="color: #0000aa">With</span>
     
@@ -161,6 +161,7 @@ Proc_Exit:
     <span style="color: #0000aa">Resume</span> Proc_Exit
 <span style="color: #0000aa">End</span> <span style="color: #0000aa">Function</span>
 </pre></div>
+
 
 
 
