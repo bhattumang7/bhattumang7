@@ -46,7 +46,7 @@ The original code was written something like below:
             .Redraw = <span style="color: #0000aa">True</span>
         <span style="color: #0000aa">End</span> <span style="color: #0000aa">With</span>
         
-        <span style="color: #aaaaaa; font-style: italic">&#39;set active row and select rows for any AdministratorISs passed in</span>
+        <span style="color: #aaaaaa; font-style: italic">&#39;set active row and select rows for any AdministratorIDs passed in</span>
         <span style="color: #0000aa">With</span> grdAdministrators
             lngTopRow = .MaxRows
             <span style="color: #0000aa">For</span> lng = <span style="color: #009999">0</span> <span style="color: #0000aa">To</span> UBound(m_vntSelectedIDs)
