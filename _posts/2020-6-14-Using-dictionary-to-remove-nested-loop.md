@@ -164,7 +164,7 @@ Proc_Exit:
 
 
 
-Once this change was in place, the time taken by this procedure came down drastically. It finished in seconds rather than finishing in minutes.
+Once this change was in place, the time taken by this procedure reduced drastically. It finished in seconds rather than finishing in minutes.
 
 Well, the above code is not perfect (it is not a single solution to replace every nested loop). 
 It will use a little more RAM than before. But, in my case, the increase was just a few MB and we could afford that (always measure).
