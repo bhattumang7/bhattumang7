@@ -1,6 +1,6 @@
 ---
 title: Replacing nested loops with dictionary
-tags: [Software Performance Tuning, Software Performance Optimization, Performance Tuning Techniques, Real world software performance]
+tags: [Replace loop with dictionary lookup, Software Performance Tuning, Software Performance Optimization, Performance Tuning Techniques, Real world software performance]
 style: border 
 color: light 
 description: Let us look at an interesting example of situation where I could gain some CPU at cost of some RAM.
@@ -13,7 +13,7 @@ Original code worked fine for a few years but, once the amount of data grew if t
 
 The original code was written something like below:
 
-```vb
+```visual basic
 
 Private Sub DisplayAdministrators()
     Const myProcName = "DisplayAdministrators"
