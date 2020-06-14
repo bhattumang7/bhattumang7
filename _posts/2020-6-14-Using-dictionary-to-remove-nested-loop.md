@@ -7,6 +7,7 @@ description: Let us look at an interesting example of situation where I could ga
 ---
 
 Let us look at a software performance problem/slowness which I fixed in the VB6 code.
+
 The slowness was when opening a form that showed all the administrators and then rendered a selection of those administrators. You could select a few administrators and those will show as selected when you open the same form again. 
 Somehow the administrator user’s information and the information about who all are selected were stored in different database tables. 
 Original code worked fine for a few years but, once the amount of data grew if the user had selected a few thousand administrators; loading the screen took a few minutes. 
