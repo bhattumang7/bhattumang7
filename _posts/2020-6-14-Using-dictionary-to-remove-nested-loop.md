@@ -80,7 +80,7 @@ The original code was written something like below:
 </pre></div>
 
 
-In the later of the procedure, the nested loops will cause a lot of CPU cycles to be spent to get the output. The inner loop is to find out the intended row from the grid (index of it). 
+In the later part of the procedure, the nested loops cause a lot of CPU cycles to be spent to get the output. The inner loop is to find out the intended row from the grid (index of it). 
 
 We can store an administrator ID's index in a dictionary (where key will be administrator ID and the vlaue will be its index in the grid). In the nested loop, we will have to just look up for the administrator ID in the dictionary. 
 
@@ -164,9 +164,9 @@ Proc_Exit:
 
 
 
-Once this change was in place, the time taken by this procedure came down drastically. It finished in seconds rather than finishing in minutes.
+Once this change was in place, the time taken by this procedure reduced drastically. It finished in seconds rather than finishing in minutes.
 
 Well, the above code is not perfect (it is not a single solution to replace every nested loop). 
 It will use a little more RAM than before. But, in my case, the increase was just a few MB and we could afford that (always measure).
 
-I hope this helps in case you come across the same problem.
+I hope this helps in case you come across similar problem.
