@@ -19,6 +19,12 @@ nav_exclude:                                            # The following paths ar
   - pages/404.html
   - pages/index.md
 
+### Analytics ###
+analytics:
+  enabled: true  # Set false to disable analytics feature
+  google:
+    tracking_id: UA-165903180-1 # your google analytics tracking-id
+
 
 ### Author Info ###
 author:
