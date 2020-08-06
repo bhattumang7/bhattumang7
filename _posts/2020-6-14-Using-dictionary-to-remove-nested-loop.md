@@ -12,7 +12,7 @@ The slowness was when opening a form that showed all the administrators and then
 Somehow the administrator user’s information and the information about who all are selected were stored in different database tables. 
 Original code worked fine for a few years but, once the amount of data grew if the user had selected a few thousand administrators; loading the screen took a few minutes. 
 
-The original code was written something like below:
+The original code was written something like below: 
 
 <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #0000aa">Private</span> <span style="color: #0000aa">Sub</span> <span style="color: #00aa00">DisplayAdministrators</span>()
     <span style="color: #0000aa">Const</span> myProcName = <span style="color: #aa5500">&quot;DisplayAdministrators&quot;</span>
