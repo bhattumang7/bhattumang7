@@ -31,7 +31,7 @@ store.Add(cert);
 store.Close();
 ```
 
-The reason behind the add failing was that by default the containerized application runs under a user named "ContainerUser" who does not have enough rights. To be able to make the code run successfully in windows container, we can make the following change to the application: 
+The reason behind the add failing was that by default the containerized application runs under a user named "ContainerUser" who does not have enough rights. To be able to make the code run successfully in windows container, we can make the following change to the application's Dockerfile: 
 
 ```dockerfile
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
@@ -48,7 +48,7 @@ USER ContainerAdministrator
 ENTRYPOINT ["dotnet", "MyEntryPOint.dll"]
 ```
 
-However, making the application run under ContainerAdministrator is not the right way to run the application. The application should run with minimum privileges. The solution for this was to create a console application (in .net core 3.1, obviously) that will install the certificate when run with the right privileges. The console program will have almost the same code as shown above. Here is how the docker file looked like: 
+However, making the application run under ContainerAdministrator is not the right way to run the application. The application should run with minimum privileges. The solution for this was to create a console application (in .net core 3.1, obviously) that will install the certificate when run with the right privileges. The console program will have almost the same code as shown above. Here is how the Dockerfile looked like: 
 
 ```dockerfile
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
