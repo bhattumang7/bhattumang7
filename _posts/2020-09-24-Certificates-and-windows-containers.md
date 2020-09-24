@@ -8,7 +8,7 @@ description: In this post, we will look at the error and solution that we see wh
 
 I had to connect to a remote address from within a container and the remote server was using a [Private Certificate Authority](https://searchsecurity.techtarget.com/definition/private-CA-private-PKI). For a successful and secure connection with the remote machine, the code running in windows container had to trust the remote certificate. 
 
-When trying to add a certificate at runtime, the following code was throwing an error that reads "unable to open a store" or "access denied".
+When trying to add a certificate at runtime from a windows container, the following code was throwing an error that reads "unable to open a store" or "access denied".
 
 ```csharp
 Console.WriteLine("Trusting root CA");
@@ -31,7 +31,7 @@ store.Add(cert);
 store.Close();
 ```
 
-The reason behind the add failing was that by default the containerized application runs under a user named "ContainerUser" who does not have enough rights. To be able to make the code run successfully, we can make the following change to the application: 
+The reason behind the add failing was that by default the containerized application runs under a user named "ContainerUser" who does not have enough rights. To be able to make the code run successfully in windows container, we can make the following change to the application: 
 
 ```dockerfile
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
