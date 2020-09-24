@@ -41,3 +41,30 @@ COPY ./out /app
 USER ContainerAdministrator # this line will make the application run under ContainerAdministrator and certificate add to Root store will work
 ENTRYPOINT ["dotnet", "MyEntryPOint.dll"]
 ```
+
+However, making the application run under ContainerAdministrator is not the right way to run the application. The application should run with minimum privileges. The solution for this was to create a console application that will install the certificate when run with the right privileges. The console program will have almost the same code as shown above. Here is how the docker file looked like: 
+
+```bash
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
+EXPOSE 80
+
+FROM base AS final
+WORKDIR /app
+COPY ./out /app
+
+# Swithch to container admin user so that the root certificate can be added 
+USER ContainerAdministrator
+
+# download the certificate
+ADD http://my.path.to/certificate.crt /app
+
+# add the certificate to root local machine store
+RUN CertImporter.exe "C:\app\certificate.crt"
+
+# switch back to the normal user
+USER ContainerUser
+
+ENTRYPOINT ["dotnet", "MyEntryPOint.dll"]
+```
+
+Information about container users is something that is not visible to the developers directly. I hope this helps.
