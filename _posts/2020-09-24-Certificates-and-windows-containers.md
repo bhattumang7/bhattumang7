@@ -31,8 +31,7 @@ store.Close();
 
 The reason behind the add failing was that by default the containerized application runs under a user named "ContainerUser" who does not have enough rights. To be able to make the code run successfully, we can make the following change to the application: 
 
-```csharp
-
+```bash
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
 EXPOSE 80
 
