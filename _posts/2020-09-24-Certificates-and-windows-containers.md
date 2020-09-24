@@ -12,9 +12,11 @@ When trying to add a certificate at runtime, the following code was throwing an 
 
 ```csharp
 Console.WriteLine("Trusting root CA");
-// Environment variable with format of "Certificates_SFPkg_Code_RootCACert_PFX" will have path to the certificate file
+// Environment variable with format of "Certificates_SFPkg_Code_RootCACert_PFX" will have path
+// to the certificate file.
 // This is injected by the service fabric into the container. 
-// See https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-securing-containers for more details.
+// See https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-securing-containers 
+// for more details.
 
 string certificateFilePath = System.Environment.GetEnvironmentVariable("Certificates_SFPkg_Code_RootCACert_PFX");
 string passwordFilePath = Environment.GetEnvironmentVariable($"CERTIFICATES_SFPkg_CODE_RootCACert_PASSWORD");
@@ -38,7 +40,11 @@ EXPOSE 80
 FROM base AS final
 WORKDIR /app
 COPY ./out /app
-USER ContainerAdministrator # this line will make the application run under ContainerAdministrator and certificate add to Root store will work
+
+# below line will make the application run under ContainerAdministrator and 
+# certificate add to Root store will work
+USER ContainerAdministrator 
+
 ENTRYPOINT ["dotnet", "MyEntryPOint.dll"]
 ```
 
