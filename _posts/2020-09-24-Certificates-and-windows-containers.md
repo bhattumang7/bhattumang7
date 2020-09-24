@@ -12,7 +12,7 @@ When trying to add a certificate at runtime, the following code was throwing an 
 
 ```csharp
 Console.WriteLine("Trusting root CA");
-// Environment variable with format of "Certificates_SFPkg_Code_MyCert1_PFX" will have path to the certificate file
+// Environment variable with format of "Certificates_SFPkg_Code_RootCACert_PFX" will have path to the certificate file
 // This is injected by the service fabric into the container. 
 // See https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-securing-containers for more details.
 
