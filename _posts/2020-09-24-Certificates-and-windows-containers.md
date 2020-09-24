@@ -28,3 +28,19 @@ store.Add(cert);
 
 store.Close();
 ```
+
+The reason behind the add failing was that by default the containerized application runs under a user named "ContainerUser" who does not have enough rights. To be able to make the code run successfully, we can make the following change to the application: 
+
+```csharp
+#Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
+#For more information, please see https://aka.ms/containercompat
+
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
+EXPOSE 80
+
+FROM base AS final
+WORKDIR /app
+COPY ./out /app
+USER ContainerAdministrator
+ENTRYPOINT ["dotnet", "MyEntryPOint.dll"]
+```
