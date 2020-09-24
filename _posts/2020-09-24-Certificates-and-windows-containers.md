@@ -44,7 +44,7 @@ ENTRYPOINT ["dotnet", "MyEntryPOint.dll"]
 
 However, making the application run under ContainerAdministrator is not the right way to run the application. The application should run with minimum privileges. The solution for this was to create a console application that will install the certificate when run with the right privileges. The console program will have almost the same code as shown above. Here is how the docker file looked like: 
 
-```bash
+```dockerfile
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
 EXPOSE 80
 
