@@ -39,6 +39,6 @@ EXPOSE 80
 FROM base AS final
 WORKDIR /app
 COPY ./out /app
-USER ContainerAdministrator
+USER ContainerAdministrator # this line will make the application run under ContainerAdministrator and certificate add to Root store will work
 ENTRYPOINT ["dotnet", "MyEntryPOint.dll"]
 ```
