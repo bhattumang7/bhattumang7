@@ -16,8 +16,8 @@ Console.WriteLine("Trusting root CA");
 // This is injected by the service fabric into the container. 
 // See https://docs.microsoft.com/en-us/azure/service-fabric/service-fabric-securing-containers for more details.
 
-string certificateFilePath = System.Environment.GetEnvironmentVariable("Certificates_SFPkg_Code_AllscriptsRootCA_PFX");
-string passwordFilePath = Environment.GetEnvironmentVariable($"CERTIFICATES_SFPkg_CODE_AllscriptsRootCA_PASSWORD");
+string certificateFilePath = System.Environment.GetEnvironmentVariable("Certificates_SFPkg_Code_RootCACert_PFX");
+string passwordFilePath = Environment.GetEnvironmentVariable($"CERTIFICATES_SFPkg_CODE_RootCACert_PASSWORD");
 
 X509Store store = new X509Store(StoreName.Root, StoreLocation.LocalMachine);
 store.Open(OpenFlags.ReadWrite);
