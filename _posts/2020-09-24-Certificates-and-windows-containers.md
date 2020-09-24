@@ -64,7 +64,7 @@ USER ContainerAdministrator
 # download the certificate
 ADD http://my.path.to/certificate.crt /app
 
-# add the certificate to root local machine store
+# add the certificate to root store of local machine
 RUN CertImporter.exe "C:\app\certificate.crt"
 
 # switch back to the normal user
@@ -73,4 +73,4 @@ USER ContainerUser
 ENTRYPOINT ["dotnet", "MyEntryPOint.dll"]
 ```
 
-Information about container users is something that is not visible to the developers directly. I hope this helps.
+Information about windows container users is something that is not visible to the developers directly. I hope this helps.
