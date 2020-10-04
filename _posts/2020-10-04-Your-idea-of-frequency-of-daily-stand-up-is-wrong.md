@@ -14,7 +14,7 @@ My response is: "okay, please take a test by answering my question.".
 
 #### How frequently is an agile team supposed to meet for "The Daily Scrum" or the "Standup Meeting."?
 
-Now, let us look at a portion from book "Clean Agile: Back to Basics" by Robert C. Martin which should answer. Oh! and because you are Agile ninja, I don't have to tell you that Robert C. Martin is one of the original authors of Agile manifesto.
+Now, let us look at a portion from the book "Clean Agile: Back to Basics" by Robert C. Martin that will answer the above question. Oh! And, because you are Agile ninja, I don't have to tell you that Robert C. Martin is one of the original authors of Agile manifesto.
 
 Lets look at what he says:
 
