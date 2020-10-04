@@ -13,3 +13,21 @@ After having read this far, you will say: "No Umang, I am aware of the practices
 My response is: "okay, please take a test by answering my question.". 
 
 #### How frequently is an agile team supposed to meet for "The Daily Scrum" or the "Standup Meeting."?
+
+Now, let us look at a portion from book "Clean Agile: Back to Basics" by Robert C. Martin which should answer. Oh! and because you are Agile ninja, I don't have to tell you that Robert C. Martin is one of the original authors of Agile manifesto.
+
+Lets look at what he says:
+
+> Over the years, there has been a great deal of confusion about “The Daily Scrum” or the “Standup Meeting.” Let me cut through all that confusion now.
+> The following are true of the Standup Meeting:
+> * **This meeting is optional. Many teams get by just fine without one.**
+> * It can be less often than daily. Pick the schedule that makes sense to you.
+> * It should take ∼10 minutes, even for large teams.
+> 
+> This meeting follows a simple formula.
+> The basic idea is that the team members stand (this is why it’s called a “standup” meeting) in a circle and answer three questions:
+> What did I do since the last meeting?
+> What will I do until the next meeting?
+> What is in my way?
+
+What did you learn?
