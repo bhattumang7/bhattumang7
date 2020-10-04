@@ -26,8 +26,8 @@ Lets look at what he says:
 > 
 > This meeting follows a simple formula.
 > The basic idea is that the team members stand (this is why it’s called a “standup” meeting) in a circle and answer three questions:
-> What did I do since the last meeting?
-> What will I do until the next meeting?
-> What is in my way?
+> * What did I do since the last meeting?
+> * What will I do until the next meeting?
+> * What is in my way?
 
 What did you learn?
