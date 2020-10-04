@@ -16,7 +16,7 @@ My response is: "okay, please take a test by answering my question.".
 
 Now, let us look at a portion from the book "Clean Agile: Back to Basics" by Robert C. Martin that will answer the above question. Oh! And, because you are Agile ninja, I don't have to tell you that Robert C. Martin is one of the original authors of Agile manifesto.
 
-Lets look at what he says:
+Let us look at what he says:
 
 > Over the years, there has been a great deal of confusion about “The Daily Scrum” or the “Standup Meeting.” Let me cut through all that confusion now.
 > The following are true of the Standup Meeting:
