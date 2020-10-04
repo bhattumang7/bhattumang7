@@ -1,5 +1,5 @@
 ---
-title: Your idea of occurance of daily stand up is wrong
+title: Your idea of frequency of daily stand up is wrong
 tags: [Agile Software Development, misconceptions about agile, Agile]
 style: border 
 color: light 
