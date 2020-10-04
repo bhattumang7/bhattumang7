@@ -6,4 +6,4 @@ color: light
 description: In this post, we will learn from Robert C Martin about misconceptions around 'how frequently should stand-up/scrum should happen'.
 ---
 
-For most people, "Agile" is a word that most of the people in the industry speak every day. But, I think that they never learned from the original masters. What they have learned from are mostly 3rd hand accounts of the original version of Agile software development (similar to "[Chinese whispers](https://en.wikipedia.org/wiki/Chinese_whispers)").   
+For most people, "Agile" is a word spoken every day. The problem with them is that they never learned from the original masters. What they have learned from are mostly 3rd hand accounts of the original version of Agile software development (similar to "[Chinese whispers](https://en.wikipedia.org/wiki/Chinese_whispers)").   
