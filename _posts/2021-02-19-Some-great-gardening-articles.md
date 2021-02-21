@@ -12,3 +12,5 @@ description: Some gardening links that i found useful.
 [How water is more important than nitrogen](https://www.sciencedirect.com/science/article/abs/pii/S0378377416304930)
 
 [An article about black spots on roses](https://extension.msstate.edu/sites/default/files/publications/publications/p2827.pdf)
+
+[A video (hindi) summarizing basic care of rose](https://youtu.be/r-u416V9Zqo)
