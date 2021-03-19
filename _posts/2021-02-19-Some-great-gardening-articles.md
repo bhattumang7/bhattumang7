@@ -14,3 +14,5 @@ description: Some gardening links that i found useful.
 [An article about black spots on roses](https://extension.msstate.edu/sites/default/files/publications/publications/p2827.pdf)
 
 [A video (hindi) summarizing basic care of rose](https://youtu.be/r-u416V9Zqo)
+
+[An encyclopedia of roses](https://www.sciencedirect.com/referencework/9780122276200/encyclopedia-of-rose-science)
