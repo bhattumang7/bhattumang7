@@ -15,4 +15,4 @@ description: Some gardening links that i found useful.
 
 [A video (hindi) summarizing basic care of rose](https://youtu.be/r-u416V9Zqo)
 
-[An encyclopedia of roses](https://www.sciencedirect.com/referencework/9780122276200/encyclopedia-of-rose-science)
+[Encyclopedia of rose science](https://www.sciencedirect.com/referencework/9780122276200/encyclopedia-of-rose-science)
