@@ -16,3 +16,6 @@ description: Some gardening links that i found useful.
 [A video (hindi) summarizing basic care of rose](https://youtu.be/r-u416V9Zqo)
 
 [Encyclopedia of rose science](https://www.sciencedirect.com/referencework/9780122276200/encyclopedia-of-rose-science)
+
+How [Utkarsh Bio Clean Sweep](https://www.utkarshagro.com/product/bio-clean-sweepa/) can [fight spider mites](https://link.springer.com/article/10.1186/s41938-020-00227-y)
+
