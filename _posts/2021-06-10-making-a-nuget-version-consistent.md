@@ -14,7 +14,7 @@ Here is the script for your reference. I hope this helps you.
 
 ```powershell
 
-$mdrxPath = "C:\Projects\PM\22.0.1\Mdrx.PM"
+$projectpath = "C:\Projects\myfancyprojectname"
 $TfExePath = "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\CommonExtensions\Microsoft\TeamFoundation\Team Explorer\tf.exe"
 if(! (Test-Path $TfExePath)) # if path not found then try to see if local dev path works
 {
