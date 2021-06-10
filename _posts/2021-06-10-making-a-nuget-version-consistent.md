@@ -8,7 +8,7 @@ description: I had to scan tens of csproj files and make the version number cons
 
 The continuous integration build failed with an error. The error read "Could not load file or assembly 'Moq, Version=4.13.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920' or one of its dependencies.". Reason? Someone checked in a project with a higher Moq version in a large solution with hundreds of projects. Now, someone had to go thru all of the projects to understand where was the wrong version added. 
 
-Instead of going thru all the projects manually, I created a tiny script to correct the version and check out the files (I don't want to check-in things without personally looking at them).
+Because this is a repeating problem, instead of going thru all the projects manually, I created a tiny script to correct the version and check out the files (I don't want to check-in things without personally looking at them).
 
 Here is the script for your reference. I hope this helps you.
 
