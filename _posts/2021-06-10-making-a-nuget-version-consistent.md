@@ -10,7 +10,7 @@ The continuous integration build failed with an error. The error read "Could not
 
 Because this is a repeating problem, instead of going thru all the projects manually, I created a tiny script to correct the version and check out the files (I don't want to check-in things without personally looking at them).
 
-Here is the script for your reference. I hope this helps you.
+Here is the script for your reference. I hope this helps you. You can also re-purpose this script to upgrade nuget version in a lot of projects.
 
 ```powershell
 
