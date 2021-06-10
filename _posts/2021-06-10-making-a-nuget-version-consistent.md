@@ -35,44 +35,44 @@ Set-Alias -Name tf -Value  $TfExePath
 
 function CheckoutFiles
 {
-	param(
-		[string] $TfExePath,
+    param(
+        [string] $TfExePath,
         [string] $FilesToBeChckedOut
     )
     process
-	{
-		Write-Host ""
-		Write-Host "    More than 10 files have beeb batched for check-out. Hence, checking them out now."
-		Write-Host "    Checking out files $FilesToBeChckedOut"
-			
-		#start of checkout
-		# if a user has checked out the file on other machine then we can continue to ignore those errors.
-		# Only non 0 return value should be considered as an error.
-		$pinfo = New-Object System.Diagnostics.ProcessStartInfo
-		$pinfo.FileName = $TfExePath
-		$pinfo.RedirectStandardError = $true
-		$pinfo.RedirectStandardOutput = $true
-		$pinfo.UseShellExecute = $false
-		#$pinfo.WorkingDirectory = $SourceDirectory
-		$CheckoutCommand = " checkout   $FilesToBeChckedOut"
-		$pinfo.Arguments =  $CheckoutCommand
-		$p = New-Object System.Diagnostics.Process
-		$p.StartInfo = $pinfo
-		$p.Start() | Out-Null
-		$p.WaitForExit()
-		$stdout = $p.StandardOutput.ReadToEnd()
-		$stderr = $p.StandardError.ReadToEnd()
-		$ExitCode = $p.ExitCode
-		
-		if($ExitCode -ne 0)
-		{
-			Write-Host "exit code: $ExitCode" 
-			Write-Host "CheckoutCommand is $CheckoutCommand"
-			Write-Host "stdout: $stdout"
-			Write-Host "stderr: $stderr"
-			throw "An error occurred while checking out. Please look at stdout and stderr."
-		}
-	}
+    {
+        Write-Host ""
+        Write-Host "    More than 10 files have beeb batched for check-out. Hence, checking them out now."
+        Write-Host "    Checking out files $FilesToBeChckedOut"
+            
+        #start of checkout
+        # if a user has checked out the file on other machine then we can continue to ignore those errors.
+        # Only non 0 return value should be considered as an error.
+        $pinfo = New-Object System.Diagnostics.ProcessStartInfo
+        $pinfo.FileName = $TfExePath
+        $pinfo.RedirectStandardError = $true
+        $pinfo.RedirectStandardOutput = $true
+        $pinfo.UseShellExecute = $false
+        #$pinfo.WorkingDirectory = $SourceDirectory
+        $CheckoutCommand = " checkout   $FilesToBeChckedOut"
+        $pinfo.Arguments =  $CheckoutCommand
+        $p = New-Object System.Diagnostics.Process
+        $p.StartInfo = $pinfo
+        $p.Start() | Out-Null
+        $p.WaitForExit()
+        $stdout = $p.StandardOutput.ReadToEnd()
+        $stderr = $p.StandardError.ReadToEnd()
+        $ExitCode = $p.ExitCode
+        
+        if($ExitCode -ne 0)
+        {
+            Write-Host "exit code: $ExitCode" 
+            Write-Host "CheckoutCommand is $CheckoutCommand"
+            Write-Host "stdout: $stdout"
+            Write-Host "stderr: $stderr"
+            throw "An error occurred while checking out. Please look at stdout and stderr."
+        }
+    }
 }
 
 $MoqVersion = "4.16.1"
@@ -83,19 +83,19 @@ $Count = 0
 foreach($proj in $PackagesConfigList)
 {
     $XMLfileName = $proj.FullName
-	# using this strange way of loading XML document to preserve white space (more info here: https://stackoverflow.com/questions/8160613/powershell-saving-xml-and-preserving-format )
-	$ProjFileXML = New-Object xml
-	$ProjFileXML.PreserveWhitespace = $true
+    # using this strange way of loading XML document to preserve white space (more info here: https://stackoverflow.com/questions/8160613/powershell-saving-xml-and-preserving-format )
+    $ProjFileXML = New-Object xml
+    $ProjFileXML.PreserveWhitespace = $true
 
-	# Load with preserve setting
-	$ProjFileXML.Load($XMLfileName)
+    # Load with preserve setting
+    $ProjFileXML.Load($XMLfileName)
     
-	$Nodes =$ProjFileXML.GetElementsByTagName("PackageReference") 
+    $Nodes =$ProjFileXML.GetElementsByTagName("PackageReference") 
     $ProjectUpdated = $false;
     if($Nodes)
     {
         foreach($node in $Nodes)
-	    {   
+        {   
             if( $node.Include -eq "Moq" -and $node.Version -ne $MoqVersion)
             {
                 $ProjectUpdated = $true
@@ -116,24 +116,23 @@ foreach($proj in $PackagesConfigList)
             {
                 Set-ItemProperty $proj -name IsReadOnly -value $false # remove read only attribute
                 $ProjFileXML.Save($XMLfileName)
-			    $Count = $Count +1 
-			
-		        if($Count -gt 10 )
-		        {
-			        CheckoutFiles $TfExePath $FilesToBeChckedOut 
-				    #end of checkout
-				    $FilesToBeChckedOut = ""
-			        $Count = 0 
-		        }
-	  
-			    Write-Host ""
-			    Write-Host "    Will check out file $proj"
-			    $FilesToBeChckedOut = $FilesToBeChckedOut + " ""$proj"" "
+                $Count = $Count +1 
+            
+                if($Count -gt 10 )
+                {
+                    CheckoutFiles $TfExePath $FilesToBeChckedOut 
+                    #end of checkout
+                    $FilesToBeChckedOut = ""
+                    $Count = 0 
+                }
+      
                 Write-Host ""
-		          
+                Write-Host "    Will check out file $proj"
+                $FilesToBeChckedOut = $FilesToBeChckedOut + " ""$proj"" "
+                Write-Host ""
+                  
             }
-		    
-	    }
+        }
     }
  
     $ProjFileXML = $null
@@ -142,9 +141,9 @@ foreach($proj in $PackagesConfigList)
 
 if($FilesToBeChckedOut -ne "")
 {
-	CheckoutFiles $TfExePath $FilesToBeChckedOut 
-	$FilesToBeChckedOut = ""
-	$Count = 0 
+    CheckoutFiles $TfExePath $FilesToBeChckedOut 
+    $FilesToBeChckedOut = ""
+    $Count = 0 
 }
 
 if($IncorrectMoqVersionOutput -ne "" )
