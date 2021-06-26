@@ -10,7 +10,7 @@ Microsoft published a book with the title "Improving .Net Application Performanc
 
 I was looking at an application that was taking a lot of time to do what it was supposed to do. The program was supposed to move a lot of data. I was trying to find out how to improve it. While running the SQL profiler, I saw that it invokes a lot of queries that do not take much time to execute in the database. The application also did not do much. A lot of time was spent on the network. In other words, the code I was looking at was too chatty with the database. 
 
-Well, I knew that this is a new problem being fixed for the first time. The book I mentioned earlier in chapter 12 describes "Improving ADO.Net Performance". In that chapter, they have a topic with the title "Reduce Round Trips". I decided to do the same thing. 
+Well, I knew that this is not a new problem being fixed for the first time. The book I mentioned earlier in chapter 12 describes "Improving ADO.Net Performance". In that chapter, they have a topic with the title "Reduce Round Trips". I decided to do the same thing. 
 
 
 ```csharp
