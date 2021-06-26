@@ -109,8 +109,8 @@ if (dataTable.Rows.Count > 0)
 
 
 ```
-Once this change was in place, we saw significant improvement in how things performed (in terms of time taken).
+Once this change was in place, we saw significant improvement in how things performed (time taken).
 
-Of course, the original code was a lot more complicated. There was a lot more error-checking and other things. But, keeping the example of ease of understanding.
+Of course, the original code was a lot more complicated (with error-checking, etc.). To keep things easy to understand, making the example simplistic. 
 
 Having an application that is too chatty is a recurring problem regardless of technology. Remember to take control of it when we spot it.
