@@ -2,15 +2,15 @@
   from: 2013
   to: Present
   description: Started as an intern now working as Senior Software Engineer. Here is my summary of work\skills at Allscripts.
-  - Started as an intern at Allscripts in the sustaining team. Moved to the tiger team for product re write because of excellent performance. 
-  - I have been working on a WinForms application where the user controls were written in VB6 and the shell/MDI form was written in WPF. 
-  - The back end was written in VB6 and then migrated to C# in 2014. Backend is based on COM+. 
-  - MSDTC
-  - SQL server and SQL profiler 
-  - Tech lead on the team for migration of WinForms application to web app.
-  - Currently working on asp net core and docker. 
-  - Familiar with unit testing, mocking, dependency injection, and factory. 
-  - Familiar with reading SQL performance graphs but not comfortable writing complex SQL. 
-  - Can look at performance traces, identify bottlenecks and make fixes. I am a go-to person for performance problems in application. 
-  - Familiar with MSBuild and can make tweaks if needed. Experienced in reducing build timings.
-  - Experienced with builds on TFS. Designed "build what has changed" for the C# backend using powershell and tfs builds. 
+  Started as an intern at Allscripts in the sustaining team. Moved to the tiger team for product re write because of excellent performance. 
+  I have been working on a WinForms application where the user controls were written in VB6 and the shell/MDI form was written in WPF. 
+  The back end was written in VB6 and then migrated to C# in 2014. Backend is based on COM+. 
+  MSDTC
+  SQL server and SQL profiler 
+  Tech lead on the team for migration of WinForms application to web app.
+  Currently working on asp net core and docker. 
+  Familiar with unit testing, mocking, dependency injection, and factory. 
+  Familiar with reading SQL performance graphs but not comfortable writing complex SQL. 
+  Can look at performance traces, identify bottlenecks and make fixes. I am a go-to person for performance problems in application. 
+  Familiar with MSBuild and can make tweaks if needed. Experienced in reducing build timings.
+  Experienced with builds on TFS. Designed "build what has changed" for the C# backend using powershell and tfs builds. 
