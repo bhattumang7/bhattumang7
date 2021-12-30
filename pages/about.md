@@ -9,7 +9,7 @@ weight: 3
 
 Hi! I am **{{ site.author.name }}**,<br>
 Welcome to my blog. I work as a Senior Software Engineer at Allscripts. 
-Using this blog, I intend to share some of my ideas and learning. 
+Using this blog, I intend to share my journey. 
 
 Here are the software engineering related activities that I am involved with:
 - New software development.
