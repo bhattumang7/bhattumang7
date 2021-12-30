@@ -4,14 +4,14 @@
   description: Started as an intern now working as Senior Software Engineer. Here is my summary of work\skills at Allscripts
     <br/>
     &nbsp;&nbsp;- Started as an intern at Allscripts in the sustaining team. Moved to the tiger team for product re write because of excellent performance. 
-    &nbsp;&nbsp;<br/>- I have been working on a WinForms application where the user controls were written in VB6 and the shell/MDI form was written in WPF. 
-    &nbsp;&nbsp;<br/>- The back end was written in VB6 and then migrated to C# in 2014. Backend is based on COM+. 
-    &nbsp;&nbsp;<br/>- MSDTC
-    &nbsp;&nbsp;<br/>- SQL server and SQL profiler 
-    &nbsp;&nbsp;<br/>- Tech lead on the team for migration of WinForms application to web app.
-    &nbsp;&nbsp;<br/>- Currently working on asp net core and docker. 
-    &nbsp;&nbsp;<br/>- Familiar with unit testing, mocking, dependency injection, and factory. 
-    &nbsp;&nbsp;<br/>- Familiar with reading SQL performance graphs but not comfortable writing complex SQL. 
-    &nbsp;&nbsp;<br/>- Can look at performance traces, identify bottlenecks and make fixes. I am a go-to person for performance problems in application. 
-    &nbsp;&nbsp;<br/>- Familiar with MSBuild and can make tweaks if needed. Experienced in reducing build timings.
-    &nbsp;&nbsp;<br/>- Experienced with builds on TFS. Designed "build what has changed" for the C# backend using powershell and tfs builds. 
+    &nbsp;&nbsp;<br/>-&nbsp;&nbsp; I have been working on a WinForms application where the user controls were written in VB6 and the shell/MDI form was written in WPF. 
+    &nbsp;&nbsp;<br/>-&nbsp;&nbsp; The back end was written in VB6 and then migrated to C# in 2014. Backend is based on COM+. 
+    &nbsp;&nbsp;<br/>-&nbsp;&nbsp; MSDTC
+    &nbsp;&nbsp;<br/>-&nbsp;&nbsp; SQL server and SQL profiler 
+    &nbsp;&nbsp;<br/>-&nbsp;&nbsp; Tech lead on the team for migration of WinForms application to web app.
+    &nbsp;&nbsp;<br/>-&nbsp;&nbsp; Currently working on asp net core and docker. 
+    &nbsp;&nbsp;<br/>-&nbsp;&nbsp; Familiar with unit testing, mocking, dependency injection, and factory. 
+    &nbsp;&nbsp;<br/>-&nbsp;&nbsp; Familiar with reading SQL performance graphs but not comfortable writing complex SQL. 
+    &nbsp;&nbsp;<br/>-&nbsp;&nbsp; Can look at performance traces, identify bottlenecks and make fixes. I am a go-to person for performance problems in application. 
+    &nbsp;&nbsp;<br/>-&nbsp;&nbsp; Familiar with MSBuild and can make tweaks if needed. Experienced in reducing build timings.
+    &nbsp;&nbsp;<br/>-&nbsp;&nbsp; Experienced with builds on TFS. Designed "build what has changed" for the C# backend using powershell and tfs builds. 
