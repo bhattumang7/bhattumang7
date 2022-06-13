@@ -8,7 +8,7 @@ weight: 3
 # **About Umang**
 
 Hi! I am **{{ site.author.name }}**,<br>
-Welcome to my blog. I work as a Senior Software Engineer at Allscripts. 
+Welcome to my blog. I work as a Software Craftsperson at [Incubyte](https://www.incubyte.co/). 
 Using this blog, I intend to share my journey. Check out my resume [here](../assets/Umang_resume.pdf).
 
 Here are the software engineering related activities that I am involved with:
